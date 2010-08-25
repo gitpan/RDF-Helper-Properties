@@ -8,8 +8,11 @@ use RDF::Trine qw(iri variable statement);
 
 use Scalar::Util qw(blessed);
 
-use Moose; # Uhm, well, this should probably also be a role at some point...
+# Uhm, well, this should probably also be a role at some point...
 
+# Next line is a workaround to problem documented in Error.pm#COMPATIBILITY
+
+BEGIN { require Moose; Moose->import; *with_role = *with; undef *with };
 use Error qw(:try);
 
 
@@ -20,11 +23,11 @@ RDF::Helper::Properties - Module that provides shortcuts to retrieve certain inf
 
 =head1 VERSION
 
-Version 0.08
+Version 0.10
 
 =cut
 
-our $VERSION = '0.08';
+our $VERSION = '0.10';
 
 
 =head1 SYNOPSIS
@@ -260,6 +263,9 @@ sub _escape {
 	return $l;
 }
 
+=item with_role
+
+Is there just because of quirk in L<Error>, don't worry about it.
 
 =back
 

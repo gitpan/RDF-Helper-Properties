@@ -10,8 +10,7 @@ Bug tracker:  <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=RDF-Helper-Propert
 Maintainer:   Kjetil Kjernsmo <mailto:kjetilk@cpan.org>
 
 0.08 [2010-08-18] # Splitting off from RDF::LinkedData and passing predicates.
- - Add namespaces method to set a hashref with RDF namespaces.
- - Give RDF::LinkedData::Predicates antlers.
- - create a helper_properties method to pass the properties.
  - (Update) RDF::Helper::Properties used to be RDF::LinkedData::Predicates.
+ - (Addition) create a helper_properties method to pass the properties.
+ - Give RDF::LinkedData::Predicates antlers.
 
