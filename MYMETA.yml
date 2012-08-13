@@ -1,16 +1,15 @@
 ---
 abstract: 'Module that provides shortcuts to retrieve certain information'
 author:
-  - 'Most of the code was written by Gregory Todd Williams C<<'
-  - 'Kjetil Kjernsmo <kjetilk@cpan.org>'
+  - 'Most of the code was written by Gregory Todd Williams C<<, Kjetil Kjernsmo <kjetilk@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
   FindBin: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 0
 dynamic_config: 0
-generated_by: 'Module::Install version 1.02, CPAN::Meta::Converter version 2.112150'
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,18 +17,11 @@ meta-spec:
 name: RDF-Helper-Properties
 no_index:
   directory:
-    - inc
     - t
-    - xt
-recommends:
-  CHI: 0
-  Moose: 0
+    - inc
 requires:
   Any::Moose: 0
   RDF::Trine: 0.135
   namespace::autoclean: 0.13
-resources:
-  bugtracker: https://github.com/kjetilk/RDF-Helper-Properties/issues
-  license: http://dev.perl.org/licenses/
-  repository: git://github.com/kjetilk/RDF-Helper-Properties.git
-version: 0.20
+  perl: 5.008
+version: 0.22

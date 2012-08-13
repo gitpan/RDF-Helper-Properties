@@ -3,7 +3,7 @@ NAME
     certain information
 
 VERSION
-    Version 0.20
+    Version 0.22
 
 SYNOPSIS
      my $helper = RDF::Helper::Properties->new($model);
@@ -36,11 +36,13 @@ DESCRIPTION
 
   Methods
     "page($node)"
-        A suitable page to redirect to, based on foaf:page or foaf:homepage
+        A suitable page to redirect to, based on foaf:page or foaf:homepage.
 
     "title($node)"
         A suitable title for the document will be returned, based on
-        document contents
+        document contents.
+
+        Called in list context, returns a ($value, $lang, $datatype) tuple.
 
     "description($node)"
         A suitable description for the document will be returned, based on

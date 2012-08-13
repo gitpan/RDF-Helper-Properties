@@ -23,7 +23,6 @@ meta/project.ttl
 MYMETA.json
 MYMETA.yml
 README
-SIGNATURE
 t/00-load.t
 t/basic.t
 t/data/basic.db
@@ -32,3 +31,4 @@ xt/0-signature.t
 xt/manifest.t
 xt/pod-coverage.t
 xt/pod.t
+SIGNATURE                                Public-key signature (added by MakeMaker)

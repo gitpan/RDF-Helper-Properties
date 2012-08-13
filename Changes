@@ -5,6 +5,11 @@ Created:      2010-08-18
 Bug tracker:  <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=RDF-Helper-Properties>
 Maintainer:   Kjetil Kjernsmo <mailto:kjetilk@cpan.org>
 
+0.22  2012-08-13
+
+ - (Addition) 'title' method called in list context now also returns
+   literal datatype and language.
+
 0.20  2012-08-10  # Refactoring
 
  - (Addition) 'page_properties' and 'title_properties' attributes allow
